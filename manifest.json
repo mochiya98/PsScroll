@@ -1,0 +1,19 @@
+{
+	"name": "PsScroll",
+	"manifest_version": 2,
+	"version": "0.1",
+	"description": "scroll like photoshop everywhere",
+	"author": "Yukimasa Funaoka",
+	"homepage_url": "https://github.com/mochiya98/PsScroll",
+	"content_scripts": [{
+		"all_frames": true,
+		"run_at": "document_start",
+		"matches": [ "<all_urls>" ],
+		"js": ["content_scripts.js"]
+	}],
+	"applications": {
+		"gecko": {
+			"id": "yukimasafunaoka@gmail.com"
+		}
+	}
+}
